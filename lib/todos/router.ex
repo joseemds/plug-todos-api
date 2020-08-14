@@ -1,6 +1,12 @@
 defmodule Todos.Router do
   use Plug.Router
 
+  plug(Plug.Parsers,
+    parsers: [:json],
+    pass: ["text/**"],
+    json_decoder: Jason
+  )
+
   plug(:match)
   plug(:dispatch)
 
