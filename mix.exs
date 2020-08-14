@@ -23,7 +23,8 @@ defmodule Todos.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.0"},
-      {:jason, "~> 1.2"}
+      {:jason, "~> 1.2"},
+      {:ecto_sql, "~> 3.4"}
     ]
   end
 end
